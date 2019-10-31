@@ -26,7 +26,7 @@ public class SliderDDMFormFieldType extends BaseDDMFormFieldType {
 
 	@Override
 	public String getModuleName() {
-		return "custom_ddm_form_field#" + _npmResolver.resolveModuleName(
+		return _npmResolver.resolveModuleName(
 			"dynamic-data-mapping-form-field-type-slider/Slider/Slider.es");
 	}
 
