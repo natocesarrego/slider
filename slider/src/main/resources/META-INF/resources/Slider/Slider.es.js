@@ -8,7 +8,7 @@ import {Config} from 'metal-state';
 /**
  * Slider Component
  */
-class DDMSlider extends Component {
+class Slider extends Component {
 
     dispatchEvent(event, name, value) {
         this.emit(name, {
@@ -30,7 +30,7 @@ class DDMSlider extends Component {
     }
 }
 
-DDMSlider.STATE = {
+Slider.STATE = {
 
     name: Config.string().required(),
 
@@ -46,6 +46,6 @@ DDMSlider.STATE = {
 }
 
 // Register component
-Soy.register(DDMSlider, templates);
+Soy.register(Slider, templates);
 
-export default DDMSlider;
+export default Slider;
