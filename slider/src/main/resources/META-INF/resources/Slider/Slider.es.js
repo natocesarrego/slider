@@ -32,6 +32,8 @@ class Slider extends Component {
 
 Slider.STATE = {
 
+    label: Config.string(),
+
     name: Config.string().required(),
 
     predefinedValue: Config.oneOfType([Config.number(), Config.string()]),
